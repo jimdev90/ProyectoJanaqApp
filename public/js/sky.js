@@ -183,7 +183,7 @@ $(document).ready(function() {
     /*end/select*/
 
     /*scroll-header*/
-    var stickyNav = $('header').offset().top;
+    const stickyNav = $('header').offset().top;
     $(window).scroll(function() {
         if ($(window).scrollTop() > stickyNav) {
             $('header').addClass('header-top-sky');
