@@ -1,5 +1,6 @@
 import {useEffect} from "react";
-import {NavBar} from "../../components/NavBar/index.jsx";
+import {NavBar} from "../../components/NavBar/index.js";
+import {Link} from "react-router-dom";
 export const Header = () => {
 
     useEffect(() => {
@@ -23,10 +24,18 @@ export const Header = () => {
                     </div>
                     <div className="header-top-right">
                         <ul>
-                            <li className="dropdown"><a href="login.html" title="LOGIN"
-                                                        className="dropdown-toggle">Iniciar Sesión</a></li>
-                            <li className="dropdown"><a href="register.html" title="REGISTER"
-                                                        className="dropdown-toggle">Registrate</a></li>
+                            <li className="dropdown">
+                                <Link to="auth/login" title="LOGIN"
+                                                        className="dropdown-toggle">
+                                    Iniciar Sesión
+                                </Link>
+                            </li>
+                            <li className="dropdown">
+                                <Link to="auth/register" title="REGISTER"
+                                                        className="dropdown-toggle">
+                                    Registrate
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </div>

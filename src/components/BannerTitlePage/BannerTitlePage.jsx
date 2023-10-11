@@ -1,3 +1,5 @@
+import { image } from '../../assets';
+import './BannerTitlePage.scss';
 export const BannerTitlePage = ({title, subtitle}) => {
     return (
         <section className="banner-tems text-center">
@@ -10,3 +12,5 @@ export const BannerTitlePage = ({title, subtitle}) => {
         </section>
     )
 }
+
+

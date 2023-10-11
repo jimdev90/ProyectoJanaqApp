@@ -1,4 +1,4 @@
-import {BannerTitlePage} from "../../components/BannerTitlePage/index.jsx";
+import {BannerTitlePage} from "../../components/BannerTitlePage/index.js";
 import {SectionForm} from "./SectionForm/index.jsx";
 import {SectionMaps} from "./SectionMaps/index.jsx";
 

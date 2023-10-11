@@ -1,5 +1,6 @@
-import {OurApartamentsItem} from "./OurApartamentsItem/index.jsx";
+import {OurApartamentsItem} from "./";
 import {useEffect} from "react";
+import {image} from '../../../assets'
 
 export const SectionOurApartaments = () => {
 
@@ -33,12 +34,9 @@ export const SectionOurApartaments = () => {
                 <div className="wrap-rooms">
                     <div className="row">
                         <div id="events" className="owl-carousel owl-theme">
-                            <OurApartamentsItem />
-                            <OurApartamentsItem />
-                            <OurApartamentsItem />
-                            <OurApartamentsItem />
-                            <OurApartamentsItem />
-                            <OurApartamentsItem />
+                            <OurApartamentsItem image={image.Apartamento370x370_1} />
+                            <OurApartamentsItem image={image.Apartamento370x370_2} />
+                            <OurApartamentsItem image={image.Apartamento370x370_3} />
                         </div>
                     </div>
                 </div>

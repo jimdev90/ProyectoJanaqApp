@@ -1,5 +1,6 @@
-import {TourItem} from "./TourItem/index.jsx";
+import {TourItem} from "./";
 import {useEffect} from "react";
+import {image} from '../../../assets'
 
 export const SectionTours = () => {
     useEffect(() => {
@@ -30,18 +31,18 @@ export const SectionTours = () => {
                 <div className="line"></div>
                 <div id="events-v2" className="owl-carousel owl-theme">
                     <TourItem
-                        img="images/Home-1/Our-Events-1.jpg"
+                        img={image.Tour370x5001}
                         title="JANAQ ALL IN ONE 04 DIAS/03 NOCHES"
                         subtitle="S/. 569 x persona"
                     />
                     <TourItem
-                        img="images/Home-1/Our-Events-1.jpg"
+                        img={image.Tour370x5002}
                         title="JANAQ ALL IN ONE 05 DIAS/04 NOCHES"
                         subtitle="S/. 690 x persona"
                     />
 
                     <TourItem
-                        img="images/Home-1/Our-Events-1.jpg"
+                        img={image.Tour370x5003}
                         title="JANAQ ALL IN ONE 06 DIAS/05 NOCHES"
                         subtitle="S/. 819 x persona"
                     />

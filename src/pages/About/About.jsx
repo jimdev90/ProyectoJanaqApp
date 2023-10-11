@@ -1,6 +1,5 @@
-import {BannerTitlePage} from "../../components/BannerTitlePage/index.jsx";
-import {SectionInfo} from "./SectionInfo/index.jsx";
-import {SectionTeam} from "./SectionTeam/index.jsx";
+import {BannerTitlePage} from "../../components/BannerTitlePage/";
+import {SectionInfo, SectionTeam} from './index.js'
 
 export const AboutPage = () => {
     return (

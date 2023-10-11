@@ -1,5 +1,4 @@
-import {Header} from "./Header/index.jsx";
-import {Footer} from "./Footer/index.jsx";
+import {Header, Footer} from "./";
 import {Outlet} from "react-router-dom";
 
 export const PrincipalLayout = () => {

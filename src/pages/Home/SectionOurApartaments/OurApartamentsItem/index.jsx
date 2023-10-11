@@ -1,10 +1,10 @@
-export const OurApartamentsItem = () => {
+export const OurApartamentsItem = ({image}) => {
     return (
         <div className="item">
             <div className="wrap-box">
                 <div className="box-img">
                     <div className="img-item">
-                        <img src="images/Home-2/rooms-2.jpg" className="img-responsive" alt="Deluxe Room" title="Deluxe Room"/>
+                        <img src={image} className="img-responsive" alt="Deluxe Room" title="Deluxe Room"/>
                     </div>
                     <div className="rooms-content">
                         <h4 className="sky-h4">Deluxe Room</h4>

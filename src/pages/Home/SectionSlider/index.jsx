@@ -1,5 +1,6 @@
 import {useEffect} from "react";
 import {SliderItem} from "./SliderItem/index.jsx";
+import { image } from '../../../assets';
 
 export const SectionSlider = () => {
 
@@ -27,14 +28,14 @@ export const SectionSlider = () => {
         <section className="section-slider">
             <div id="index12" className="owl-carousel owl-theme">
                 <SliderItem
-                    img="images/Home-1/Slider-v1-f.jpg"
-                    title="Welcome to Skyline"
-                    subtitle="Hotels & Resorts"
+                    img={image.Slider1920x10001}
+                    title="Bienvenido a Janaq Cusco"
+                    subtitle="Hoteles, Apartamentos & Tours"
                 />
                 <SliderItem
-                    img="images/Home-1/Slider-v1-f.jpg"
-                    title="Enjoy a Luxury  Experience"
-                    subtitle="Hotels & Resorts"
+                    img={image.Slider1920x10002}
+                    title="Disfruta de una experiencia de lujo"
+                    subtitle="Hoteles, Apartamentos & Tours"
                 />
             </div>
         </section>

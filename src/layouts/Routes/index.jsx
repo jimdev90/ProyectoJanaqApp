@@ -1,9 +1,7 @@
 import { useRoutes } from "react-router-dom";
-import {PrincipalLayout} from "../index.jsx";
-import {HomePage} from "../../pages/Home/index.jsx";
-import {Login} from "../../Auth/Login/index.jsx";
-import {ContactPage} from "../../pages/Contact/index.jsx";
-import {AboutPage} from "../../pages/About/index.jsx";
+import {PrincipalLayout} from "../index.js";
+import {HomePage, ContactPage, TourPage, AboutPage, HotelPage, ApartamentsPage} from "../../pages";
+import {Login, Register} from '../../auth';
 
 export const RoutesComponent = () => {
     const isLogedIn = false;
@@ -25,6 +23,18 @@ export const RoutesComponent = () => {
                     element: <HomePage />
                 },
                 {
+                    path: "/tours",
+                    element: <TourPage />
+                },
+                {
+                    path: "/hotels",
+                    element: <HotelPage />
+                },
+                {
+                    path: "/apartaments",
+                    element: <ApartamentsPage />
+                },
+                {
                     path: "/contact",
                     element: <ContactPage />
                 },
@@ -40,6 +50,11 @@ export const RoutesComponent = () => {
                             index: true,
                             path: 'login',
                             element: <Login />
+                        },
+                        {
+                            index: true,
+                            path: 'register',
+                            element: <Register />
                         }
                     ]
                 }
